@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="glxv - developer building useful tools, automation, and creative side projects.">
+  <meta name="theme-color" content="#08080f">
+  <title>glxv | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="site-bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-specks"></div>
+    <div class="bg-glow bg-glow-a"></div>
+    <div class="bg-glow bg-glow-b"></div>
+    <div class="bg-vignette"></div>
+  </div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Go to home">glxv</a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Toggle menu"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a class="nav-link active" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#stack">Stack</a></li>
+        <li><a class="nav-link" href="#stats">Stats</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero section reveal">
+      <div class="container hero-wrap">
+        <div class="hero-main">
+          <p class="micro-label">// builder</p>
+          <h1>glxv</h1>
+          <p class="hero-tagline">Welcome to my portfolio!</p>
+          <p class="hero-copy">
+            I build tools that remove friction. Most of my work lives at the intersection of automation,
+            game-adjacent utilities, and random ideas that deserve a real implementation.
+          </p>
+          <p class="status-line">
+            <span class="status-dot" aria-hidden="true"></span>
+            available for building cool things
+            <span class="status-caret" aria-hidden="true"></span>
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="https://github.com/glxv" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+            <a class="btn btn-ghost" href="https://ayo.so/glxv" target="_blank" rel="noopener noreferrer">More Socials</a>
+          </div>
+        </div>
+
+        <aside class="hero-notes reveal" aria-label="Developer notes">
+          <p class="panel-label">// signal</p>
+          <ul class="signal-list">
+            <li>
+              <span class="signal-index">01</span>
+              <p><strong>FluxShare</strong><br>Cloud-free file transfer from your own machine.</p>
+            </li>
+            <li>
+              <span class="signal-index">02</span>
+              <p><strong>McOsu Importer</strong><br>Skip manual map setup and get straight into rhythm.</p>
+            </li>
+            <li>
+              <span class="signal-index">03</span>
+              <p><strong>dpi sync pulse</strong><br>OCR-based DPI detection that keeps sensitivity consistent.</p>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-number">01</p>
+          <div>
+            <p class="micro-label">// featured projects</p>
+            <h2>My best ones.</h2>
+          </div>
+        </header>
+
+        <div class="project-list">
+          <article class="project-item reveal">
+            <p class="project-number">01</p>
+            <div class="project-body">
+              <h3>FluxShare</h3>
+              <p>A free way to share any file from your computer without relying on cloud storage.</p>
+              <div class="chip-row" aria-label="FluxShare technologies">
+                <span class="chip">Rust</span>
+                <span class="chip">Networking</span>
+                <span class="chip">Desktop Utility</span>
+              </div>
+            </div>
+            <a class="project-link" href="https://github.com/glxv/fluxshare" target="_blank" rel="noopener noreferrer" aria-label="Open FluxShare repository">Repo</a>
+          </article>
+
+          <article class="project-item reveal">
+            <p class="project-number">02</p>
+            <div class="project-body">
+              <h3>McOsu Importer</h3>
+              <p>A map importer for mcosu, so you can skip downloading osu! and start playing faster.</p>
+              <div class="chip-row" aria-label="McOsu Importer technologies">
+                <span class="chip">Python</span>
+                <span class="chip">Automation</span>
+                <span class="chip">Game Tooling</span>
+              </div>
+            </div>
+            <a class="project-link" href="https://github.com/glxv/mcosu-importer" target="_blank" rel="noopener noreferrer" aria-label="Open McOsu Importer repository">Repo</a>
+          </article>
+
+          <article class="project-item reveal">
+            <p class="project-number">03</p>
+            <div class="project-body">
+              <h3>dpi sync pulse</h3>
+              <p>OCR detection that updates mouse speed when DPI changes on Razer mice.</p>
+              <div class="chip-row" aria-label="dpi sync pulse technologies">
+                <span class="chip">Python</span>
+                <span class="chip">OCR</span>
+                <span class="chip">Input Automation</span>
+              </div>
+            </div>
+            <a class="project-link" href="https://github.com/glxv/dpi-sync-pulse" target="_blank" rel="noopener noreferrer" aria-label="Open dpi sync pulse repository">Repo</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-number">02</p>
+          <div>
+            <p class="micro-label">// about</p>
+            <h2>Hii!.</h2>
+          </div>
+        </header>
+
+        <div class="about-grid">
+          <article class="about-block reveal">
+            <p class="panel-label">// whoami</p>
+            <p>
+              I like solving problems by building apps. If something is annoying, repetitive, or clunky,
+              I would rather ship a tool than complain about it.
+            </p>
+          </article>
+
+          <article class="about-block reveal">
+            <p class="panel-label">// what i build</p>
+            <p>
+              I spend most of my time on automation, game-related utilities, and random creative side projects.
+              I enjoy turning rough ideas into something fast, clear, and actually useful.
+            </p>
+          </article>
+
+          <article class="about-block reveal">
+            <p class="panel-label">// outside code</p>
+            <p>
+              Off the keyboard, I am usually gaming, watching anime, or just enjoying the process of learning
+              through whatever I am currently obsessed with.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack" class="section reveal">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-number">03</p>
+          <div>
+            <p class="micro-label">// stack</p>
+            <h2>Tools i mostly use.</h2>
+          </div>
+        </header>
+
+        <div class="stack-wrap reveal" role="list" aria-label="Technology stack">
+          <span class="stack-chip" role="listitem">Rust</span>
+          <span class="stack-chip" role="listitem">Python</span>
+          <span class="stack-chip" role="listitem">JavaScript / TypeScript</span>
+          <span class="stack-chip" role="listitem">HTML / CSS</span>
+          <span class="stack-chip" role="listitem">Git / GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="section reveal">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-number">04</p>
+          <div>
+            <p class="micro-label">// github stats</p>
+            <h2>Live signals from GitHub.</h2>
+          </div>
+        </header>
+
+        <div class="stats-grid">
+          <article class="stat-card reveal">
+            <p class="panel-label">// stats card</p>
+            <div class="stat-media">
+              <img
+                src="https://github-readme-stats.vercel.app/api?username=glxv&show_icons=true&hide_border=true&theme=midnight-purple&bg_color=00000000"
+                alt="GitHub stats card for glxv"
+                loading="lazy"
+              >
+            </div>
+          </article>
+
+          <article class="stat-card reveal">
+            <p class="panel-label">// top languages</p>
+            <div class="stat-media">
+              <img
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=glxv&layout=compact&hide_border=true&theme=midnight-purple&bg_color=00000000"
+                alt="Top languages card for glxv"
+                loading="lazy"
+              >
+            </div>
+          </article>
+
+          <article class="stat-card reveal">
+            <p class="panel-label">// streak</p>
+            <div class="stat-media">
+              <img
+                src="https://streak-stats.demolab.com?user=glxv&hide_border=true&theme=midnight-purple&background=00000000"
+                alt="GitHub streak card for glxv"
+                loading="lazy"
+              >
+            </div>
+          </article>
+        </div>
+
+        <a class="stats-link" href="https://github.com/glxv" target="_blank" rel="noopener noreferrer">Visit github.com/glxv</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-number">05</p>
+          <div>
+            <p class="micro-label">// contact</p>
+            <h2>Say hi, send a project, or just connect.</h2>
+          </div>
+        </header>
+
+        <div class="contact-grid">
+          <a class="contact-item reveal" href="https://github.com/glxv" target="_blank" rel="noopener noreferrer">
+            <span>GitHub</span>
+            <strong>@glxv</strong>
+          </a>
+
+          <a class="contact-item reveal" href="mailto:shiny4443@gmail.com">
+            <span>Email</span>
+            <strong>shiny4443@gmail.com</strong>
+          </a>
+
+          <a class="contact-item reveal" href="https://x.com/hglxv" target="_blank" rel="noopener noreferrer">
+            <span>X / Twitter</span>
+            <strong>@hglxv</strong>
+          </a>
+
+          <div class="contact-item reveal" role="group" aria-label="Discord username">
+            <span>Discord</span>
+            <strong>GlxV</strong>
+          </div>
+
+          <a class="contact-item contact-item-wide reveal" href="https://ayo.so/glxv" target="_blank" rel="noopener noreferrer">
+            <span>More Socials</span>
+            <strong>ayo.so/glxv</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Built late, tuned carefully, shipped with intent.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
